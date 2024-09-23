@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #e7d4d4;
+  font-size: 28px;
+
+}
+
+h2 {
+  color: #389a7bf3;
+  font-size: 28px;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  padding: 0px 20px;
+  width: 100%;
+  height: 100px;
+  background-color: #478365;
+}
+
+main {
+  flex: 1;
+  padding: 15px;
+}
+
+#productContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.product-card {
+  border: 5px double gold;
+  border-radius: 20px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.card-img {
+  width: 80%;
+  height: auto;
+}
+
+.loader {
+  width: px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 0.7s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-hide {
+  display: none;
+}
+
+.font-effect-fire-animation {
+  color: rgb(198, 228, 224);
+  text-shadow: 8px 9px 15px;
+  text-decoration: rgb(82, 132, 116);
+  text-align: center;
+  font-style: italic;
+
+  font-family: "Times New Roman", Times, bold, serif;
+}
+
+#productForm {
+  background-color: #ecd23c;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.Calculate:hover {
+  background-color: goldenrod;
+}
+.Calculate {
+  background-color: gold;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: gold;
+}
+
+.span {
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 10px;
+  margin: 3px 9px 48px 9px;
+  color: goldenrod;
+}
+.span:hover {
+  color: rgba(53, 25, 25, 0.542);
+}
+.hello {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  background-color: #bbc399;
+  color: rgb(224, 234, 232);
+  text-shadow: 8px 9px 15px;
+  text-decoration: rgb(12, 30, 24);
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, bold, serif; 
+}
+
+#totalPrice{
+    font-size: larger;
+    color: #ff3d00;
+    background-color: gold;
+    border-radius: 15px;
+}
+
+#priceForm{
+    background-color: goldenrod;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.colorFont{
+    color:#ff3d00; ;
+}
+
+p {
+  color: black;
+  font-size: 18px
+}

@@ -1,0 +1,15 @@
+.myForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
+  height: 30px;
+  
+}
+
+.myForm > input {
+  margin-bottom: 3px;
+  max-width: 150px;
+  height: 30px;
+  
+}

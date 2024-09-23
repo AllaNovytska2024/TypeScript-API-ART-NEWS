@@ -1,0 +1,15 @@
+.myInput {
+  /* min-width:  70px; */
+  display: flex;
+  width: 70px;
+  height: 30px;
+  border: gold;
+  border: double;
+  padding: 6px 10px;
+  margin: 12px;
+  border-radius: 35px;
+  color: white;
+  cursor: pointer;
+}
+/* .myInput:hover{
+  } */
