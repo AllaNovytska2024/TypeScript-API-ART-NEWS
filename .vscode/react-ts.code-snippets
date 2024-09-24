@@ -1,0 +1,17 @@
+{
+	"rfct": {
+		"scope": "typescriptreact",
+		"prefix": "rfct",
+		"body": [
+		  "const ${TM_FILENAME_BASE} = () => {",
+		  "return (",
+		  "<div className='lesson-container'>",
+		  "",
+		  "</div>",
+		  ")",
+		  "}",
+		  "",
+		  "export default ${TM_FILENAME_BASE};"
+		]
+	  },
+}

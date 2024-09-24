@@ -7,7 +7,7 @@ import MyInput from "../components/myInput/MyInput";
 import Counter from "../components/counter/Counter";
 import MyButton from "../components/myButton/MyButton";
 import Feedback from "../components/feedback/Feedback";
-
+import cn from "classnames";
 function LedyArt() {
   return (
     <>
@@ -63,8 +63,7 @@ function LedyArt() {
         <>
           <div className="but-greed ">
             <button className="myButton" type="button">
-              фото цветов
-            </button>
+              фото цветов</button>
             <button className="myButton" type="button">
               дизайны сада
             </button>

@@ -19,7 +19,7 @@
   cursor: pointer;
   padding: 6px 10px;
   margin: 2px;
-  width: 140px;
+  min-width: 140px;
   background: #e96443;
   background: -webkit-linear-gradient(to right, #4ce8ce, #e39885);
   background: linear-gradient(
@@ -44,6 +44,7 @@
   background: linear-gradient(to left, #727bde, #d49a2edb);
   color: rgb(5, 5, 245);
   border-width: 2px;
+  min-width: 140px;
   height: 40px;
   border: double;
 }
@@ -82,11 +83,12 @@
 .primary {
   background-color: rgb(252, 3, 57);
   color: rgb(251, 251, 4);
+  min-width: 140px;
 }
 .primary:hover{
   border-color: red;
-  color: rgb(202, 251, 6);
-  width: 160px;
+  color: rgb(37, 9, 75);
+  min-width: 140px;
   background: linear-gradient(to left,red, #f66904, #ebc379db);
 }
 

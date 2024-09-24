@@ -51,6 +51,9 @@ export default function FetchArtNews() {
             {" "}
             TypeScript-API-ART-NEWS
           </h1>
+          <h2>
+          Alla Novytska practice Type Script API @2024
+          </h2>
         </div>
         <div className="but-position">
           <MyButton
