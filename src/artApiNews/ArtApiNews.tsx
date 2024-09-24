@@ -93,7 +93,7 @@ export default function FetchArtNews() {
       </main>
 
       <footer className="font-effect-fire-animation">
-       Alla Novytska practice Type Script API @2024
+        Alla Novytska practice Type Script API @2024
       </footer>
     </body>
   );
