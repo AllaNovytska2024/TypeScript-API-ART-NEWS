@@ -1,12 +1,17 @@
 .App {
-    text-align: center;
-  }
-  
-  .jsxImg {
-    width: 250px;
-  }
-  
-  /*
+  text-align: center;
+}
+
+.jsxImg {
+  width: 250px;
+}
+.all-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 50px;
+}
+/*
   @keyframes App-logo-spin {
     from {
       transform: rotate(0deg);

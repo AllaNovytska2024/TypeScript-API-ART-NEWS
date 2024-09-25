@@ -5,7 +5,7 @@ import "./lesson02.css";
 function Lesson02() {
   // создаем переменную со значением в теле функции до return
   const heading = "Lesson 2. JSX";
-  const classContainer = "lesson-container";
+  const classContainer = "all-container";
 
   const john = {
     name: "John",

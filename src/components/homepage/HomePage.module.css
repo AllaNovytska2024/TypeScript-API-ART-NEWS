@@ -1,0 +1,43 @@
+.lessonContainer {
+    padding-top: 20px;
+  }
+  
+  .lessonList {
+    padding-left: 15px;
+  }
+  
+  .lessonList a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .lessonList a:hover {
+    text-decoration: underline;
+  }
+  
+  .gridContainer {
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 130px;
+  }
+  
+  .gridContainer a {
+    text-decoration: none;
+  }
+  
+  .gridContainer div {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(184, 129, 232);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .gridContainer div:hover {
+    background-color: rgb(222, 185, 255);
+  }

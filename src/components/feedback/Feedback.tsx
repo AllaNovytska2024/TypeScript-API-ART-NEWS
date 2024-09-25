@@ -1,22 +1,22 @@
 import { useState } from "react";
 import MyButton from "../myButton/MyButton";
-import './feedback.css'
+import "./feedback.css";
 
 function Feedback() {
   const [like, setLike] = useState<number>(5);
   const [dislike, setDislike] = useState<number>(0);
 
-  const handleLike = ():void => {
-    setLike(prev => prev + 1)
-  }
-  const handleDislike = ():void => {
-    setDislike(prev => prev + 1)
-  }
+  const handleLike = (): void => {
+    setLike((prev) => prev + 1);
+  };
+  const handleDislike = (): void => {
+    setDislike((prev) => prev + 1);
+  };
 
-  const handleReset = ():void => {
-    setLike(0)
-    setDislike(0)
-  }
+  const handleReset = (): void => {
+    setLike(0);
+    setDislike(0);
+  };
 
   return (
     <div>
