@@ -59,10 +59,13 @@
   }
 }
 
-/* .catImg {
-  width: 300px;
-  background-image: url"src/assets/image/cat-color.jpg";
-} */
+.catImg {
+  min-width: 400px;
+  min-height: 300px;
+  background-image: url("../../assets/image/cat-color.jpg");
+  background-size: cover;
+  
+}
 .allContainer {
   display: flex;
   flex-direction: column;

@@ -46,7 +46,7 @@ export default function FetchCat() {
           ))}
         </div>
       )}
-      <div></div>
+      <div className={styles.catImg}></div>
       <div>
         <p className="font-effect-3d-float ">МНОГО ИНФОРМАЦИИ О КОШКАХ</p>
       </div>
