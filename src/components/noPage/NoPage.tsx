@@ -1,5 +1,5 @@
 // import styles from './noPage.module.css'
-import gif from "../myGifts/character-13952_128.gif"
+import gif from "../myGifts/composing-2925179_1920.jpg"
 const NoPage = () => {
     return (
       <div className='lesson-container'>
