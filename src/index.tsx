@@ -20,6 +20,7 @@ import Lesson08 from './lessons/lesson_08/Lesson08';
 import Lesson09 from './lessons/lesson_09/Lesson09';
 import Lesson10 from './lessons/lesson_10/Lesson10';
 import Lesson11 from './lessons/lesson_11/Lesson11';
+import Lesson12 from './lessons/lesson_12/Lesson12';
 
 
 
@@ -52,7 +53,8 @@ root.render(
         <Route element={<Lesson09 />} path='lesson-9' />
         <Route element={<Lesson10 />} path='lesson-10' />
         <Route element={<Lesson11 />} path='lesson-11' />
-        {/* <Route element={<Lesson12 />} path='lesson-12' /> */}
+        <Route element={<Lesson12/>} path='lesson-12' />
+        {/* <Route element={<Lesson1 />} path='lesson-12' /> */}
         <Route element={<NoPage />} path='*' />
 
       </Route>

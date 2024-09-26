@@ -1,10 +1,12 @@
 import { NavLink, Outlet } from "react-router-dom";
 import styles from "./layout.module.css";
+import gif from "../components/myGifts/cartoon-563_128.gif"
 
 const Layout = () => {
   return (
     <div className={styles.pageWrapper}>
       <header className={styles.header}>
+      <img className="imgSize"  src={gif} alt="" />
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"/"}

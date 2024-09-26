@@ -17,7 +17,9 @@ const HomePage = () => {
         <Link to='lesson-10'><div>Lesson 10</div></Link>
         <Link to='lesson-11'><div>Lesson 11</div></Link>
 
-        {/* <Link to='lesson-3'> <div>Lesson 12</div></Link> */}
+        <Link to='lesson-12'> <div>Lesson 12</div></Link>
+
+        
         {/* <div>Lesson 4</div>
         <div>Lesson 5</div>
         <div>Lesson 6</div>
