@@ -4,3 +4,9 @@
     align-items: center;
     padding: 0px 50px;
   }
+  .all-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 50px;
+  }

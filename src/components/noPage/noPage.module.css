@@ -1,7 +1,7 @@
 .noPageImg {
     min-width: 400px;
     min-height: 300px;
-    background-image: url("https://pixabay.com/ru//?utm_source=link-attribution&utm_medium=referral&utm_campaign=animation&utm_content=1701");
+    background-image: "../../components/myGifts/cartoon-762_128.gif";
     background-size: cover;
     
   }

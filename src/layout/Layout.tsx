@@ -11,6 +11,8 @@ const Layout = () => {
         >
           Lessons
         </NavLink>
+
+        
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"fetch-dog"}
