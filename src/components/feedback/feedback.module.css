@@ -1,0 +1,12 @@
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding-top: 10px;
+}
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -34,7 +34,7 @@ h1{
 background-image: url("./assets/image/cat-color.jpg");
  } */
   
- .fontEffectFireAnimation {
+ .font-effect-fire-animation {
    color: rgb(59, 87, 46);
    text-shadow: 8px 9px 15px;
    text-decoration: rgb(242, 234, 9);

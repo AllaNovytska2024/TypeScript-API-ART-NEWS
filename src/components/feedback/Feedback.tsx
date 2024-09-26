@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MyButton from "../myButton/MyButton";
-import "./feedback.css";
+import "./feedback.module.css";
+// import cn from "classnames";
 
 function Feedback() {
   const [like, setLike] = useState<number>(5);
@@ -19,14 +20,14 @@ function Feedback() {
   };
 
   return (
-    <div>
-      <div className="counter-container">
+    <div className="counter-container">
+      <div className="feedback-container">
         <span>{like}</span>
         <MyButton isPrimary={true} onClick={handleLike} text={"Like👍"} />
         <MyButton onClick={handleDislike} text={"👎Dislike"} />
         <span>{dislike}</span>
       </div>
-      <div className="all-container">
+      <div className="feedback-container">
         <MyButton text={"Reset results ♻️"} onClick={handleReset} />
       </div>
     </div>

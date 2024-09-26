@@ -3,8 +3,8 @@ import "./index.css";
 
 // import reportWebVitals from "../reportWebVitals";
 
-import Lesson08 from "./lesson_08/Lesson08";
-import Lesson07 from "./lesson_07/Lesson07";
+// import Lesson08 from "./lesson_08/Lesson08";
+// import Lesson07 from "./lesson_07/Lesson07";
 import FetchDog from "../components/fetchDog/FetchDog";
 
 
