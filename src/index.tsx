@@ -21,6 +21,8 @@ import Lesson09 from './lessons/lesson_09/Lesson09';
 import Lesson10 from './lessons/lesson_10/Lesson10';
 import Lesson11 from './lessons/lesson_11/Lesson11';
 import Lesson12 from './lessons/lesson_12/Lesson12';
+import LedyArt from './ledyArt/LadyArt';
+import FetchArtNews from './artApiNews/ArtApiNews';
 
 
 
@@ -39,6 +41,9 @@ root.render(
         <Route element={<HomePage />} path='/' />
         <Route element={<FetchDog />} path='fetch-dog' />
         <Route element={<FetchCat />} path='fetch-cat' />
+        <Route element={<LedyArt />} path='ledy-art' />
+        <Route element={< FetchArtNews/>} path='art-API-News' />
+
         <Route element={<Counter />} path='counter' />
         <Route element={<MyForm />} path='my-form' />
         <Route element={<Feedback />} path='feedback' />

@@ -31,6 +31,20 @@ const Layout = () => {
 
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
+          to={"ledy-art"}
+        >Ledy Art
+          
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.linkActive : "")}
+          to={"art-API-News"}
+        >Art API NEWS
+          
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"counter"}
         >
           Counter

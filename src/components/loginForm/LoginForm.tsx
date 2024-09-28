@@ -1,10 +1,11 @@
 import React from "react";
 import MyInput from "../myInput/MyInput";
 import MyButton from "../myButton/MyButton";
+import style from "./loginForm.module.css"
 
 const LoginForm: React.FC = () => {
   return (
-    <form>
+    <form className={style.MyButton}>
       <MyInput
         name="login"
         type="text"
