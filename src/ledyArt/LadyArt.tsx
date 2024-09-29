@@ -127,34 +127,44 @@ function LedyArt() {
                 Это пробный проект практика-работа в REACT
               </p>
             </div>
-            <div>
-            <div className=" font-effect-fire-animation">
-            <div className="butLogin-input">
+            <form className="myForm-Art ">
               <MyInput
                 name="login"
-                type="text"
-                placeholder="Введите логин"
-                label="Логин"
+                label={"login"}
+                placeholder={"login"}
+                type={"text"}
               />
-            </div>
-            <div className="butLogin-input">
-              <MyInput
-                name="email"
-                type="email"
-                placeholder="Введите email"
-                label="Email"
-              />
-            </div>
-            <div className="butLogin-input">
               <MyInput
                 name="password"
-                type="password"
-                placeholder="Введите пароль"
-                label="Пароль"
+                label={"pass"}
+                placeholder={"password"}
+                type={"password"}
               />
-            </div>
-          </div>
-            </div>
+              <MyInput
+                name="email"
+                label={"email"}
+                placeholder={"email"}
+                type={"email"}
+              />
+              <MyButton
+                text={"авторизация"}
+                type="submit"
+                onClick={() => console.log("login!!")}
+              />
+            </form>
+            <form
+          className="myForm-Art  "
+          action="https://google.com/search"
+        >
+          <label htmlFor="search-input">Можно найти все!</label>
+          <input
+            type="text"
+            id="search-input"
+            name="q"
+            placeholder="Enter query..."
+          />
+          <input className="myButtonFoot-Art" type="submit" value="Search" />
+        </form>
           </div>
         </div>
 
@@ -186,7 +196,7 @@ function LedyArt() {
       </main>
       <footer className="footer-Art">
         <form
-          className="font-effect-fire-animation"
+          className="myButtonFoot-Art"
           action="https://google.com/search"
         >
           <label htmlFor="search-input">Можно найти все!</label>
@@ -200,19 +210,19 @@ function LedyArt() {
         </form>
         Alla Novytska practice Type Script API @2024
         <div className="but-greed-Art feedback-container">
-          <button className="myButton" type="button">
+          <button className="myButtonFoot-Art" type="button">
             обо мне
           </button>
-          <button className="myButton" type="button">
+          <button className="myButtonFoot-Art" type="button">
             соцсети
           </button>
-          <button className="myButton" type="button">
+          <button className="myButtonFoot-Art" type="button">
             профессии
           </button>
-          <button className="myButton" type="button">
+          <button className="myButtonFoot-Art" type="button">
             хобби
           </button>
-          <button className="myButton" type="button">
+          <button className="myButtonFoot-Art" type="button">
             мои сайты
           </button>
         </div>

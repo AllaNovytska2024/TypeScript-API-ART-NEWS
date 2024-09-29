@@ -64,7 +64,6 @@
   min-height: 300px;
   background-image: url("../../assets/image/cat-color.jpg");
   background-size: cover;
-  
 }
 .allContainer {
   display: flex;
@@ -94,17 +93,89 @@
 }
 .font-effect-shadow-multiple {
   color: #0c458b;
-  text-shadow: .04em .04em 0 #fff,.08em .08em 0 #aaa;
-  -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
+  text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
+  -webkit-text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
 }
 
 .font-effect-fire-animation {
-  -webkit-animation-duration:0.8s;
-  -webkit-animation-name:font-effect-fire-animation-keyframes;
-  -webkit-animation-iteration-count:infinite;
-  -webkit-animation-direction:alternate;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-name: font-effect-fire-animation-keyframes;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
   color: #ffe;
 }
+
+.myButtonFoot-Art {
+  justify-content: center;
+  cursor: pointer;
+  padding: 6px 10px;
+  margin: 2px;
+  min-width: 140px;
+  background: #d02f06;
+  background: -webkit-linear-gradient(
+    to right,
+    goldenrod,
+    #406aad,
+    #e39885,
+    gold
+  );
+  background: linear-gradient(
+    to right,
+    white,
+    #073585,
+    #e06d50db,
+    rgb(244, 61, 61),
+    gold,
+    rgba(235, 215, 102, 0.729)
+  );
+
+  border: dotted;
+  border-radius: 35px;
+  border: gold;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* max-width: 160px; */
+  max-height: 40px;
+  text-align: center;
+}
+
+.myButtonFoot-Art:hover {
+  justify-content: center;
+  cursor: pointer;
+  padding: 6px 10px;
+  margin: 2px;
+  min-width: 140px;
+  background: #d02f06;
+  background: -webkit-linear-gradient(
+    to right,
+    goldenrod,
+    #406aad,
+    #e39885,
+    gold
+  );
+  background: linear-gradient(
+    to right,
+    red,
+    white,
+    #073585,
+    #e06d50db,
+    rgb(244, 61, 61),
+    gold,
+    rgba(235, 215, 102, 0.729),
+    rgb(39, 185, 205)
+  );
+  border-style: double;
+  border-width: 3px;
+  border-color: #0b4158;
+  border-radius: 35px;
+  border: rgb(30, 71, 232);
+  color: blue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* max-width: 160px; */
+  max-height: 40px;
+  text-align: center;
+}
+
 /* @font-face {
   font-family: 'Rancho';
   font-style: normal;

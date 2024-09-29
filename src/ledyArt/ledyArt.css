@@ -1,7 +1,7 @@
 .App-Art {
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .jsxImg {
@@ -22,12 +22,13 @@
   /* grid-template-columns: none|auto|max-content|min-content|length|initial|inherit; */
   padding: 10 px;
   margin: 0px;
-  
+
   /* gap: 10px; */
 }
 
-
-
+.myLogin {
+  justify-content: flex-end;
+}
 
 .header-Art {
   display: flex;
@@ -51,14 +52,30 @@
 }
 .h2-Art {
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
- margin: 0;
- padding-bottom: 10px ;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding-bottom: 10px;
 }
 .p-Art {
   padding: 0;
   margin: 10px;
 }
+
+.myForm-Art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
+  height: 30px;
+  color: goldenrod;
+}
+
+.myForm-Art > input {
+  margin-bottom: 3px;
+  max-width: 150px;
+  height: 30px;
+}
+
 .main-Art {
   background-color: #2b5e35;
   padding: 0px;
@@ -68,10 +85,13 @@
 }
 .footer-Art {
   /* background-color: rgb(131, 235, 187); */
+  color: gold;
   height: 170px;
   margin: 10px 10px 0px 40 px;
   padding: 0px 10px 0px 60 px;
   background-color: rgb(121, 148, 80);
+  border-radius: 5px;
+  text-align: center;
 }
 .allaNovytska {
   display: flex;
@@ -136,6 +156,77 @@
   border: double;
 }
 
+.myButtonFoot-Art {
+  justify-content: center;
+  cursor: pointer;
+  padding: 6px 10px;
+  margin: 2px;
+  min-width: 140px;
+  background: #d02f06;
+  background: -webkit-linear-gradient(
+    to right,
+    goldenrod,
+    #406aad,
+    #e39885,
+    gold
+  );
+  background: linear-gradient(
+    to right,
+    white,
+    #073585,
+    #e06d50db,
+    rgb(244, 61, 61),
+    gold,
+    rgba(235, 215, 102, 0.729)
+  );
+
+  border: dotted;
+  border-radius: 35px;
+  border: gold;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* max-width: 160px; */
+  max-height: 40px;
+  text-align: center;
+}
+
+.myButtonFoot-Art:hover {
+  justify-content: center;
+  cursor: pointer;
+  padding: 6px 10px;
+  margin: 2px;
+  min-width: 140px;
+  background: #d02f06;
+  background: -webkit-linear-gradient(
+    to right,
+    goldenrod,
+    #406aad,
+    #e39885,
+    gold
+  );
+  background: linear-gradient(
+    to right,
+    red,
+    white,
+    #073585,
+    #e06d50db,
+    rgb(244, 61, 61),
+    gold,
+    rgba(235, 215, 102, 0.729),
+    rgb(39, 185, 205)
+  );
+  border-style: double;
+  border-width: 3px;
+  border-color: #0b4158;
+  border-radius: 35px;
+  border: rgb(30, 71, 232);
+  color:blue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* max-width: 160px; */
+  max-height: 40px;
+  text-align: center;
+}
+
 .btnFavorite-Art {
   align-items: center;
 }
@@ -145,11 +236,11 @@
   color: rgb(251, 251, 4);
   min-width: 140px;
 }
-.primary-Art:hover{
+.primary-Art:hover {
   border-color: red;
   color: rgb(37, 9, 75);
   min-width: 140px;
-  background: linear-gradient(to left,red, #f66904, #ebc379db);
+  background: linear-gradient(to left, red, #f66904, #ebc379db);
 }
 
 .butLoginInput {
@@ -158,14 +249,13 @@
   /* justify-content: space-between; */
 }
 
-.textRightArt{
+.textRightArt {
   align-items: center;
- justify-items: center;
-
+  justify-items: center;
 }
 
 .font-effect-shadow-multiple {
   color: gold;
-  text-shadow: .04em .04em 0 #fff,.08em .08em 0 #aaa;
-  -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
+  text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
+  -webkit-text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
 }

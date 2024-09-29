@@ -1,12 +1,12 @@
 import { NavLink, Outlet } from "react-router-dom";
 import styles from "./layout.module.css";
-import gif from "../components/myGifts/cartoon-563_128.gif"
+import gif from "../components/myGifts/glitter-ball-10892_128.gif";
 
 const Layout = () => {
   return (
     <div className={styles.pageWrapper}>
       <header className={styles.header}>
-      <img className="imgSize"  src={gif} alt="" />
+        <img className="imgSize" src={gif} alt="" />
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"/"}
@@ -14,7 +14,6 @@ const Layout = () => {
           Lessons
         </NavLink>
 
-        
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"fetch-dog"}
@@ -32,15 +31,15 @@ const Layout = () => {
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"ledy-art"}
-        >Ledy Art
-          
+        >
+          Ledy Art
         </NavLink>
 
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"art-API-News"}
-        >Art API NEWS
-          
+        >
+          Art API NEWS
         </NavLink>
 
         <NavLink
