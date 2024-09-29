@@ -2,6 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import styles from "./layout.module.css";
 import gif from "../components/myGifts/glitter-ball-10892_128.gif";
 
+
 const Layout = () => {
   return (
     <div className={styles.pageWrapper}>
@@ -44,6 +45,13 @@ const Layout = () => {
 
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
+          to={"gender-Form"}
+        >
+          Gender Form
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"counter"}
         >
           Counter
@@ -66,7 +74,10 @@ const Layout = () => {
         <Outlet />
         {/* здесь мог бы быть (и будет)  ваш компонент */}
       </main>
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer}>
+
+        
+      </footer>
     </div>
   );
 };

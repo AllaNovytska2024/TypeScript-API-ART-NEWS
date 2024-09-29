@@ -7,6 +7,7 @@ import MyInput from "../components/myInput/MyInput";
 import Counter from "../components/counter/Counter";
 import MyButton from "../components/myButton/MyButton";
 import Feedback from "../components/feedback/Feedback";
+import gif from "../components/myGifts/glitter-ball-10892_128.gif";
 // import cn from "classnames";
 
 function LedyArt() {
@@ -16,6 +17,7 @@ function LedyArt() {
         <h1 className="h1-Art font-effect-shadow-multiple">
           ДОБРА ВСЕМ ДОБРЫМ ЛЮДЯМ !
         </h1>
+        <img className="imgSize" src={gif} alt="" />
       </header>
 
       <main className="main-Art">
@@ -152,19 +154,20 @@ function LedyArt() {
                 onClick={() => console.log("login!!")}
               />
             </form>
-            <form
-          className="myForm-Art  "
-          action="https://google.com/search"
-        >
-          <label htmlFor="search-input">Можно найти все!</label>
-          <input
-            type="text"
-            id="search-input"
-            name="q"
-            placeholder="Enter query..."
-          />
-          <input className="myButtonFoot-Art" type="submit" value="Search" />
-        </form>
+            <form className="myForm-Art  " action="https://google.com/search">
+              <label htmlFor="search-input">Можно найти все!</label>
+              <input
+                type="text"
+                id="search-input"
+                name="q"
+                placeholder="Enter query..."
+              />
+              <input
+                className="myButtonFoot-Art"
+                type="submit"
+                value="Search"
+              />
+            </form>
           </div>
         </div>
 
@@ -195,10 +198,7 @@ function LedyArt() {
         </div>
       </main>
       <footer className="footer-Art">
-        <form
-          className="myButtonFoot-Art"
-          action="https://google.com/search"
-        >
+        <form className="myButtonFoot-Art" action="https://google.com/search">
           <label htmlFor="search-input">Можно найти все!</label>
           <input
             type="text"
@@ -208,6 +208,7 @@ function LedyArt() {
           />
           <input type="submit" value="Search" />
         </form>
+        <img className="imgSize" src={gif} alt="" />
         Alla Novytska practice Type Script API @2024
         <div className="but-greed-Art feedback-container">
           <button className="myButtonFoot-Art" type="button">

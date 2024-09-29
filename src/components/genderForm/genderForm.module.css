@@ -1,14 +1,32 @@
+
+
+
+.errorMessage {
+  position: left;
+  bottom: -20px;
+  left: 0;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+
+
 .genderForm {
+  position: relative;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
   }
   
   .genderForm > input {
-    margin-bottom: 3px;
+    margin-bottom: 6px;
   }
   .genderForm label {
-    margin-bottom: 3px;
+    margin-bottom: 8px;
+    color: rgb(177, 97, 248);font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .genderForm > button {
@@ -29,4 +47,13 @@
   .genderOutput {
     margin-top: 0px;
     font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+  .genderOutput.female {
+    color: red;
+  }
+  
+  .genderOutput.male {
+    color: blue;
   }

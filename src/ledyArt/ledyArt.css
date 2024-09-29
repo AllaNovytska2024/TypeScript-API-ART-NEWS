@@ -41,8 +41,8 @@
   margin: 10;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   border-radius: 5px !important;
 }
 
@@ -86,7 +86,7 @@
 .footer-Art {
   /* background-color: rgb(131, 235, 187); */
   color: gold;
-  height: 170px;
+  min-height: 200px;
   margin: 10px 10px 0px 40 px;
   padding: 0px 10px 0px 60 px;
   background-color: rgb(121, 148, 80);

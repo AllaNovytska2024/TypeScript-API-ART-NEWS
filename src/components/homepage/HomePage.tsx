@@ -54,6 +54,12 @@ const HomePage = () => {
           {" "}
           <div>Lesson CatAPI</div>
         </Link>
+
+        <Link to="lesson-GenderForm">
+          {" "}
+          <div>Lesson GenderForm</div>
+        </Link>
+       
        
         {/* <div>Lesson 4</div>
         <div>Lesson 5</div>
