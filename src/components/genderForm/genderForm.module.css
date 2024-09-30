@@ -1,6 +1,3 @@
-
-
-
 .errorMessage {
   position: left;
   bottom: -20px;
@@ -12,48 +9,91 @@
   font-size: 12px;
 }
 
-
-
 .genderForm {
   position: relative;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .genderForm > input {
-    margin-bottom: 6px;
-  }
-  .genderForm label {
-    margin-bottom: 8px;
-    color: rgb(177, 97, 248);font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  .genderForm > button {
-    padding: 3px 0px;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    background-color: rgb(177, 97, 248);
-  }
-  
-  .genderForm > button:hover {
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    background-color: rgb(206, 151, 255);
-  }
-  
-  .genderOutput {
-    margin-top: 0px;
-    font-size: 22px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-  }
-  .genderOutput.female {
-    color: red;
-  }
-  
-  .genderOutput.male {
-    color: blue;
-  }
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.genderForm > input {
+  margin-bottom: 6px;
+}
+.genderForm label {
+  margin-bottom: 8px;
+  color: rgb(177, 97, 248);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.genderForm > button {
+  padding: 3px 0px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(177, 97, 248);
+}
+
+.genderForm > button:hover {
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(206, 151, 255);
+}
+
+.genderOutput {
+  margin-top: 0px;
+  font-size: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.genderOutput.female {
+  color: red;
+}
+
+.genderOutput.male {
+  color: blue;
+}
+/* Dmitr-css===== */
+/* .genderForm {
+  position: relative;
+  margin-top: 90px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(255, 87, 87);
+  border-radius: 5px;
+  position: absolute;
+  top: -55px;
+  color: rgb(255, 255, 255);
+}
+
+.genderForm > input {
+  margin-bottom: 3px;
+}
+.genderForm label {
+  margin-bottom: 3px;
+}
+
+.genderForm > button {
+  padding: 3px 0px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(177, 97, 248);
+}
+
+.genderForm > button:hover {
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(206, 151, 255);
+}
+
+.genderOutput {
+  margin-top: 0px;
+  font-size: 22px;
+} */

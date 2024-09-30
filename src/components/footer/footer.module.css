@@ -1,0 +1,343 @@
+/* .footer {
+    height: 50px;
+    background-color: rgb(221, 221, 221);
+  } */
+
+  .myButtonFoot-Art {
+    justify-content: center;
+    cursor: pointer;
+    padding: 6px 10px;
+    margin: 2px;
+    min-width: 140px;
+    background: #d02f06;
+    background: -webkit-linear-gradient(
+      to right,
+      goldenrod,
+      #406aad,
+      #e39885,
+      gold
+    );
+    background: linear-gradient(
+      to right,
+      white,
+      #073585,
+      #e06d50db,
+      rgb(244, 61, 61),
+      gold,
+      rgba(235, 215, 102, 0.729)
+    );
+  
+    border: dotted;
+    border-radius: 35px;
+    border: gold;
+    color: white;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    /* max-width: 160px; */
+    max-height: 40px;
+    text-align: center;
+  }
+  
+  .myButtonFoot-Art:hover {
+    justify-content: center;
+    cursor: pointer;
+    padding: 6px 10px;
+    margin: 2px;
+    min-width: 140px;
+    background: #d02f06;
+    background: -webkit-linear-gradient(
+      to right,
+      goldenrod,
+      #406aad,
+      #e39885,
+      gold
+    );
+    background: linear-gradient(
+      to right,
+      red,
+      white,
+      #073585,
+      #e06d50db,
+      rgb(244, 61, 61),
+      gold,
+      rgba(235, 215, 102, 0.729),
+      rgb(39, 185, 205)
+    );
+    border-style: double;
+    border-width: 3px;
+    border-color: #0b4158;
+    border-radius: 35px;
+    border: rgb(30, 71, 232);
+    color:blue;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    /* max-width: 160px; */
+    max-height: 40px;
+    text-align: center;
+  }
+
+  .footer-Art {
+    /* background-color: rgb(131, 235, 187); */
+    color: gold;
+    min-height: 200px;
+    margin: 10px 10px 0px 40 px;
+    padding: 0px 10px 0px 60 px;
+    background-color: rgb(121, 148, 80);
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .myButton-Art {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 6px 10px;
+  margin: 2px;
+  min-width: 140px;
+  background: #e96443;
+  background: -webkit-linear-gradient(to right, #4ce8ce, #e39885);
+  background: linear-gradient(
+    to right,
+    #6da24c,
+    #e06d50db,
+    rgba(235, 215, 102, 0.729)
+  );
+
+  border: dotted;
+  border-radius: 35px;
+  border: gold;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* max-width: 160px; */
+  max-height: 40px;
+  text-align: center;
+}
+
+.myButton-Art:hover {
+  background: -webkit-linear-gradient(to right, #365b54, #91321b, gold);
+  background: linear-gradient(to left, #727bde, #d49a2edb);
+  color: rgb(5, 5, 245);
+  border-width: 2px;
+  min-width: 140px;
+  height: 40px;
+  border: double;
+}
+
+
+
+.btnFavorite-Art {
+  align-items: center;
+}
+
+.primary-Art {
+  background-color: rgb(252, 3, 57);
+  color: rgb(251, 251, 4);
+  min-width: 140px;
+}
+.primary-Art:hover {
+  border-color: red;
+  color: rgb(37, 9, 75);
+  min-width: 140px;
+  background: linear-gradient(to left, red, #f66904, #ebc379db);
+}
+
+.butLoginInput {
+  display: inline-flex;
+  /* align-items: end; */
+  /* justify-content: space-between; */
+}
+
+.textRightArt {
+  align-items: center;
+  justify-items: center;
+}
+
+.font-effect-shadow-multiple {
+  color: gold;
+  text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
+  -webkit-text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
+}
+
+/* === */
+.App-Art {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .jsxImg {
+    height: 400px;
+    width: auto;
+  }
+  
+  .allaImgArt {
+    height: 140px;
+    width: auto;
+    border: none;
+    border-radius: 50%;
+    /* border-color: rgb(255, 0, 0); */
+    /* border-width: 13px; */
+  }
+  
+  .but-greed-Art {
+    /* grid-template-columns: none|auto|max-content|min-content|length|initial|inherit; */
+    padding: 10 px;
+    margin: 0px;
+  
+    /* gap: 10px; */
+  }
+  
+  .myLogin {
+    justify-content: flex-end;
+  }
+  
+  .header-Art {
+    display: flex;
+    position: sticky;
+    background-color: red;
+    height: 75px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    padding: 5px;
+    margin: 10;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 5px !important;
+  }
+  
+  .h1-Art {
+    margin: 10px;
+    background-color: none;
+  }
+  .h2-Art {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  .p-Art {
+    padding: 0;
+    margin: 10px;
+  }
+  
+  .myForm-Art {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    height: 30px;
+    color: goldenrod;
+  }
+  
+  .myForm-Art > input {
+    margin-bottom: 3px;
+    max-width: 150px;
+    height: 30px;
+  }
+  
+  .main-Art {
+    background-color: #2b5e35;
+    padding: 0px;
+    margin: 0px;
+    grid-column: auto;
+    /* justify-content: space-between; */
+  }
+  
+  .allaNovytska {
+    display: flex;
+    padding: 13px 5px 3px 5px;
+    margin: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    color: #2b5e35;
+    text-shadow: 8px 9px 15px;
+    text-shadow: #212c23;
+  }
+  
+  .span-Art {
+    padding: 20px;
+    text-align: center;
+    color: aqua;
+  }
+  
+  .font-effect-fire-animation {
+    color: rgb(59, 87, 46);
+    text-shadow: 8px 9px 15px;
+    text-decoration: rgb(242, 234, 9);
+    text-align: center;
+    font-style: italic;
+    font-family: "Times New Roman", Times, bold, serif;
+    /* background-color: none !important; */
+  }
+  
+  .myButton-Art {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 6px 10px;
+    margin: 2px;
+    min-width: 140px;
+    background: #e96443;
+    background: -webkit-linear-gradient(to right, #4ce8ce, #e39885);
+    background: linear-gradient(
+      to right,
+      #6da24c,
+      #e06d50db,
+      rgba(235, 215, 102, 0.729)
+    );
+  
+    border: dotted;
+    border-radius: 35px;
+    border: gold;
+    color: white;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    /* max-width: 160px; */
+    max-height: 40px;
+    text-align: center;
+  }
+  
+  .myButton-Art:hover {
+    background: -webkit-linear-gradient(to right, #365b54, #91321b, gold);
+    background: linear-gradient(to left, #727bde, #d49a2edb);
+    color: rgb(5, 5, 245);
+    border-width: 2px;
+    min-width: 140px;
+    height: 40px;
+    border: double;
+  }
+  
+  
+  
+  .btnFavorite-Art {
+    align-items: center;
+  }
+  
+  .primary-Art {
+    background-color: rgb(252, 3, 57);
+    color: rgb(251, 251, 4);
+    min-width: 140px;
+  }
+  .primary-Art:hover {
+    border-color: red;
+    color: rgb(37, 9, 75);
+    min-width: 140px;
+    background: linear-gradient(to left, red, #f66904, #ebc379db);
+  }
+  
+  .butLoginInput {
+    display: inline-flex;
+    /* align-items: end; */
+    /* justify-content: space-between; */
+  }
+  
+  .textRightArt {
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .font-effect-shadow-multiple {
+    color: gold;
+    text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
+    -webkit-text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
+  }
+  

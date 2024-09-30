@@ -2,9 +2,9 @@
   text-align: center;
 }
 
-.jsxImg {
+/* .jsxImg {
   width: 250px;
-}
+} */
 .all-container {
   display: flex;
   flex-direction: column;

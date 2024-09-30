@@ -1,0 +1,33 @@
+.header {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    padding: 10px 50px;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 148, 40);
+  }
+  
+  .header > a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .linkActive {
+    /* !important - дает наивысший приоритет css свойству */
+    text-decoration: underline !important;
+  }
+  
+  
+  .header > a:hover {
+    text-decoration: underline;
+  }
+
+
+  .jsxImg {
+    height: 400px;
+    width: auto;
+  }

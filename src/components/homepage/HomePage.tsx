@@ -12,7 +12,6 @@ const HomePage = () => {
           <div>Lesson 2</div>
         </Link>
         <Link to="lesson-3">
-          {" "}
           <div>Lesson 3</div>
         </Link>
         <Link to="lesson-4">
@@ -22,7 +21,6 @@ const HomePage = () => {
           <div>Lesson 5</div>
         </Link>
         <Link to="lesson-6">
-          {" "}
           <div>Lesson 6</div>
         </Link>
         <Link to="lesson-7">
@@ -32,7 +30,6 @@ const HomePage = () => {
           <div>Lesson 8</div>
         </Link>
         <Link to="lesson-9">
-          {" "}
           <div>Lesson 9</div>
         </Link>
         <Link to="lesson-10">
@@ -42,25 +39,23 @@ const HomePage = () => {
           <div>Lesson 11</div>
         </Link>
         <Link to="lesson-12">
-          {" "}
           <div>Lesson 12</div>
         </Link>
         <Link to="lesson-13">
-          {" "}
           <div>Lesson 13</div>
         </Link>
 
-       <Link to="lesson-CatAPI">
-          {" "}
+        <Link to="lesson-CatAPI">
           <div>Lesson CatAPI</div>
         </Link>
 
         <Link to="lesson-GenderForm">
-          {" "}
           <div>Lesson GenderForm</div>
         </Link>
-       
-       
+        <Link to="lesson-14">
+          <div>Lesson 14</div>
+        </Link>
+
         {/* <div>Lesson 4</div>
         <div>Lesson 5</div>
         <div>Lesson 6</div>

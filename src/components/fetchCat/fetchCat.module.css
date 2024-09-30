@@ -75,6 +75,8 @@
   color: blue;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+
 .myColor {
   background: #e96443;
   background: -webkit-linear-gradient(to right, #4ce8ce, #e39885);
@@ -92,7 +94,7 @@
   color: #6f3e3e;
 }
 .font-effect-shadow-multiple {
-  color: #0c458b;
+  color: #2a8b0c;
   text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
   -webkit-text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
 }

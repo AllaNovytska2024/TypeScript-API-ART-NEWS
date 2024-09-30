@@ -21,10 +21,10 @@ import Lesson09 from "./lessons/lesson_09/Lesson09";
 import Lesson10 from "./lessons/lesson_10/Lesson10";
 import Lesson11 from "./lessons/lesson_11/Lesson11";
 import Lesson12 from "./lessons/lesson_12/Lesson12";
+import Lesson13 from "./lessons/lesson_13/Lesson13";
+import Lesson14 from "./lessons/lesson_14/Lesson14";
 import LedyArt from "./ledyArt/LadyArt";
 import FetchArtNews from "./artApiNews/ArtApiNews";
-import Lesson13 from "./lessons/lesson_13/Lesson13";
-
 import LessonCatAPI from "./lessons/lesson_catAPI/LessonCatAPI";
 import LessonGenderForm from "./lessons/lesson_GenderForm/LessonGenderForm";
 import GenderForm from "./components/genderForm/GenderForm";
@@ -46,7 +46,7 @@ root.render(
         <Route element={<FetchCat />} path="fetch-cat" />
         <Route element={<LedyArt />} path="ledy-art" />
         <Route element={<FetchArtNews />} path="art-API-News" />
-        <Route element={< GenderForm/>} path="gender-Form" />
+        <Route element={<GenderForm />} path="gender-Form" />
         <Route element={<Counter />} path="counter" />
         <Route element={<MyForm />} path="my-form" />
         <Route element={<Feedback />} path="feedback" />
@@ -65,8 +65,7 @@ root.render(
         <Route element={<Lesson13 />} path="lesson-13" />
         <Route element={<LessonCatAPI />} path="lesson-CatAPI" />
         <Route element={<LessonGenderForm />} path="lesson-GenderForm" />
-
-        GenderForm
+        <Route element={<Lesson14 />} path="lesson-14" />
 
         <Route element={<NoPage />} path="*" />
       </Route>

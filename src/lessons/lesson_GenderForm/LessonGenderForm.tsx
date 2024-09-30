@@ -5,7 +5,7 @@ import GenderForm from '../../components/genderForm/GenderForm';
 const LessonGenderForm = () => {
     return (
       <div className='lesson-container'>
-        <h2>Lesson 14. MyCat</h2>
+        <h2>Lesson 14. Gender Form</h2>
         {/* <GenderForm/> */}
         <GenderForm />
       </div>

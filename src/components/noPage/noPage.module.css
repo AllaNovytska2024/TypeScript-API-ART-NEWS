@@ -1,15 +1,18 @@
 .noPageImg {
   max-width: 400px;
   height: auto;
-  background-image: "../../components/myGifts/composing-2925179_1920.jpggit";
+  background-image: "../../components/myGifts/monkeyDenken_gif.gif";
   background-size: cover;
   align-items: center;
+  background-size: cover;
   /*justify-items: center;
     justify-content: center; */
 }
 
 .noPageImg img {
-  max-width: 400px;
+  display: block !important;
+  width: auto;
+  max-width: 100%;
   height: auto;
 }
 
@@ -89,9 +92,6 @@
   flex-direction: row;
   align-items: center;
   padding: 0px 50px;
-}
-
-.noPageContainer {
   overflow: hidden;
 }
 

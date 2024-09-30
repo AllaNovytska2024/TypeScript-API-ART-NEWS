@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import MyButton from "../components/myButton/MyButton";
 import Feedback from "../components/feedback/Feedback";
 import "./fetchArtApiNews.css";
+// import gif from "../gift/giftFales/myGifts/glitter-ball-10892_128.gif"
 
 interface IArticle {
   title: string;
@@ -95,9 +96,7 @@ export default function FetchArtNews() {
         </div>
       </main>
 
-      <footer className="font-effect-fire-animation">
-        Alla Novytska practice Type Script API @2024
-      </footer>
+      
     </body>
   );
 }

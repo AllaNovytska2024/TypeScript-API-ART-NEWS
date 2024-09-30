@@ -7,7 +7,7 @@ import MyInput from "../components/myInput/MyInput";
 import Counter from "../components/counter/Counter";
 import MyButton from "../components/myButton/MyButton";
 import Feedback from "../components/feedback/Feedback";
-import gif from "../components/myGifts/glitter-ball-10892_128.gif";
+import gif from "../components/gift/myGifts/glitter-ball-10892_128.gif";
 // import cn from "classnames";
 
 function LedyArt() {
@@ -197,37 +197,6 @@ function LedyArt() {
           </span>
         </div>
       </main>
-      <footer className="footer-Art">
-        <form className="myButtonFoot-Art" action="https://google.com/search">
-          <label htmlFor="search-input">Можно найти все!</label>
-          <input
-            type="text"
-            id="search-input"
-            name="q"
-            placeholder="Enter query..."
-          />
-          <input type="submit" value="Search" />
-        </form>
-        <img className="imgSize" src={gif} alt="" />
-        Alla Novytska practice Type Script API @2024
-        <div className="but-greed-Art feedback-container">
-          <button className="myButtonFoot-Art" type="button">
-            обо мне
-          </button>
-          <button className="myButtonFoot-Art" type="button">
-            соцсети
-          </button>
-          <button className="myButtonFoot-Art" type="button">
-            профессии
-          </button>
-          <button className="myButtonFoot-Art" type="button">
-            хобби
-          </button>
-          <button className="myButtonFoot-Art" type="button">
-            мои сайты
-          </button>
-        </div>
-      </footer>
     </>
   );
 }
