@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.f31b1b78.css",
-    "main.js": "./static/js/main.4af7de31.js",
+    "main.css": "./static/css/main.c36fbb45.css",
+    "main.js": "./static/js/main.e5019a12.js",
     "static/media/cat-color.jpg": "./static/media/cat-color.7d5d9b856274ec5432b6.jpg",
     "static/media/cartoon-762_128.gif": "./static/media/cartoon-762_128.cd19cb81025f0b27d52d.gif",
     "static/media/monkeyDenken.jpg": "./static/media/monkeyDenken.fdf01c9dae2306e113c9.jpg",
@@ -10,11 +10,11 @@
     "static/media/monkeyDenken_gif.gif": "./static/media/monkeyDenken_gif.50b280af0ab89591a563.gif",
     "static/media/jsx.jpg": "./static/media/jsx.2b139d52d7e7b606eee6.jpg",
     "index.html": "./index.html",
-    "main.f31b1b78.css.map": "./static/css/main.f31b1b78.css.map",
-    "main.4af7de31.js.map": "./static/js/main.4af7de31.js.map"
+    "main.c36fbb45.css.map": "./static/css/main.c36fbb45.css.map",
+    "main.e5019a12.js.map": "./static/js/main.e5019a12.js.map"
   },
   "entrypoints": [
-    "static/css/main.f31b1b78.css",
-    "static/js/main.4af7de31.js"
+    "static/css/main.c36fbb45.css",
+    "static/js/main.e5019a12.js"
   ]
 }
