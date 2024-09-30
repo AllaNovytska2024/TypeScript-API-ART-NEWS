@@ -28,6 +28,7 @@ import FetchArtNews from "./artApiNews/ArtApiNews";
 import LessonCatAPI from "./lessons/lesson_catAPI/LessonCatAPI";
 import LessonGenderForm from "./lessons/lesson_GenderForm/LessonGenderForm";
 import GenderForm from "./components/genderForm/GenderForm";
+import LessonNoPage from "./lessons/lesson_noPage/LessonNoPage";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -64,6 +65,7 @@ root.render(
         <Route element={<Lesson12 />} path="lesson-12" />
         <Route element={<Lesson13 />} path="lesson-13" />
         <Route element={<LessonCatAPI />} path="lesson-CatAPI" />
+        <Route element={<LessonNoPage />} path="lesson-noPage" />
         <Route element={<LessonGenderForm />} path="lesson-GenderForm" />
         <Route element={<Lesson14 />} path="lesson-14" />
 

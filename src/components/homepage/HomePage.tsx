@@ -48,6 +48,9 @@ const HomePage = () => {
         <Link to="lesson-CatAPI">
           <div>Lesson CatAPI</div>
         </Link>
+        <Link to="lesson-noPage">
+          <div>Lesson no Page</div>
+        </Link>
 
         <Link to="lesson-GenderForm">
           <div>Lesson GenderForm</div>

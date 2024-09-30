@@ -32,7 +32,10 @@ const Header = () => {
         >
           Ledy Art
         </NavLink>
-
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.linkActive : "")}
+          to={"lesson-noPage"}
+        >Lesson NoPage</NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"art-API-News"}
