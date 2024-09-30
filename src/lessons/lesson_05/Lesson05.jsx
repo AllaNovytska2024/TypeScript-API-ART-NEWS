@@ -1,4 +1,4 @@
-import ForceUsers from "../../components/starWars/forceUsers/ForceUsers";
+import ForceUsers from "../../components/aPI/starWars/forceUsers/ForceUsers";
 
 function Lesson05() {
   return (

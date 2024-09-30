@@ -1,5 +1,5 @@
 import "./consultation05.module.css";
-import ClickCounter from "../../components/counters/clickCounter/ClickCounter";
+import ClickCounter from "../../../components/forms/counters/clickCounter/ClickCounter";
 // import "./"
 
 function Consultation05() {

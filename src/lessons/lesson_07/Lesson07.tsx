@@ -1,4 +1,4 @@
-import Counter from "../../components/counters/counter/Counter";
+import Counter from "../../components/forms/counters/counter/Counter";
 import MyButton from "../../components/forms/myButton/MyButton";
 
 export default function Lesson07() {

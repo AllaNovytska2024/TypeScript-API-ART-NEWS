@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom/client";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Counter from "../components/counters/counter/Counter";
+import Counter from "../components/forms/counters/counter/Counter";
 import Feedback from "../components/forms/feedback/Feedback";
 import FetchDog from "../components/aPI/fetchDog/FetchDog";
 import HomePage from "../components/dom/homepage/HomePage";

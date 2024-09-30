@@ -1,6 +1,6 @@
 // import styles from "./noPage.module.css";
 // import gifMonkay from "../myGifts/composing-2925179_1920.jpg";
-import gif2 from "../../../components/gift/myGifts/monkeyDenken.jpg"
+import gif2 from "../../../assets/gift/myGifts/monkeyDenken.jpg"
 
 const NoPage = () => {
   return (

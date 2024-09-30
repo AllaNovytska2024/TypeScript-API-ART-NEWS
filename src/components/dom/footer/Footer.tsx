@@ -1,5 +1,5 @@
 import styles from './footer.module.css'
-import gif from "../../gift/myGifts/glitter-ball-10892_128.gif"
+import gif from "../../../assets/gift/myGifts/glitter-ball-10892_128.gif"
 
 const Footer = () => {
 return (

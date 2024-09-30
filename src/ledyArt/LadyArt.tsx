@@ -4,10 +4,10 @@ import jsxImg from "../assets/image/jsx.jpg";
 import allaImg from "../assets/image/allaImg.jpg";
 // import LoginForm from "../components/loginForm/LoginForm";
 import MyInput from "../components/forms/myInput/MyInput";
-import Counter from "../components/counters/counter/Counter";
+import Counter from "../components/forms/counters/counter/Counter";
 import MyButton from "../components/forms/myButton/MyButton";
 import Feedback from "../components/forms/feedback/Feedback";
-import gif from "../components/gift/myGifts/glitter-ball-10892_128.gif";
+import gif from "../assets/gift/myGifts/glitter-ball-10892_128.gif";
 // import cn from "classnames";
 
 function LedyArt() {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MyButton from "../../forms/myButton/MyButton";
+import MyButton from "../../myButton/MyButton";
 // import cn from "classnames";
 
 function ClickCounter() {

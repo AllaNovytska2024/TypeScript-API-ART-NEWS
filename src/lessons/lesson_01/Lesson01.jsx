@@ -2,7 +2,7 @@
 import jsxImg from "../../assets/image/jsx.jpg";
 import MyButton from "../../components/forms/myButton/MyButton";
 import "./lesson01.css";
-import gif3 from "../../components/gift/myGifts/cartoon-762_128.gif";
+import gif3 from "../../assets/gift/myGifts/cartoon-762_128.gif";
 
 // функции App является react компонентом
 // в return такая функция возвращает верстку с данными

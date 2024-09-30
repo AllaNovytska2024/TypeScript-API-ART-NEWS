@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './lesson12.module.css';
-import gif from "../../components/gift/myGifts/glitter-ball-10892_128.gif"
+import gif2 from "../../assets/gift/myGifts/monkeyDenken.jpg"
 import { useFormik } from 'formik';
 
 
