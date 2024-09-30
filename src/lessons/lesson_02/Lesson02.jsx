@@ -1,5 +1,4 @@
-
-import MyButton from '../../components/myButton/MyButton';
+import MyButton from "../../components/forms/myButton/MyButton";
 import "./lesson02.css";
 
 function Lesson02() {
@@ -10,13 +9,13 @@ function Lesson02() {
   const john = {
     name: "John",
     lastName: "Snow",
-    symbol: "❄️"
+    symbol: "❄️",
   };
 
   const rob = {
     name: "Rob",
     lastName: "Stark",
-    symbol: "🐺"
+    symbol: "🐺",
   };
   // результат вызова этой функции с разными данными можно будет увидеть напрямую в верстке при ее вызове в фигурных скобках
   function formatName(user) {
@@ -31,7 +30,9 @@ function Lesson02() {
   if (!isLogin) {
     return (
       <div className={classContainer}>
-        <h4 style={{ color: "red" }}>You are not authorized to see our lesson 🧐</h4>
+        <h4 style={{ color: "red" }}>
+          You are not authorized to see our lesson 🧐
+        </h4>
       </div>
     );
   }
@@ -58,13 +59,17 @@ function Lesson02() {
       <p>{formatName(rob)}</p>
       <p>{formatName(john)}</p>
       <p>Пользователь {isLogin ? "успешно" : "не"} авторизирован 💁‍♂️</p>
-      {hasLicense ? <p>You can drive a car! 🚗 </p> : <p>Don't use a car without license 👮‍♂️</p>}
+      {hasLicense ? (
+        <p>You can drive a car! 🚗 </p>
+      ) : (
+        <p>Don't use a car without license 👮‍♂️</p>
+      )}
       {/* сам объект распечатать в фигурных скобках напрямую не получится */}
       {/* <p>{john}</p> */}
       <h4>Переиспользование компонента на примере кнопки</h4>
-      <MyButton/>
-      <MyButton/>
-      <MyButton/>
+      <MyButton />
+      <MyButton />
+      <MyButton />
     </div>
   );
 }

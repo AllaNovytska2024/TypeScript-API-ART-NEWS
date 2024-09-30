@@ -1,4 +1,4 @@
-import Feedback from "../../components/feedback/Feedback";
+import Feedback from "../../components/forms/feedback/Feedback";
 
 function HomeWork04() {
   return (

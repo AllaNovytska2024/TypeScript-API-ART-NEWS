@@ -3,10 +3,10 @@ import "./ledyArt.css";
 import jsxImg from "../assets/image/jsx.jpg";
 import allaImg from "../assets/image/allaImg.jpg";
 // import LoginForm from "../components/loginForm/LoginForm";
-import MyInput from "../components/myInput/MyInput";
-import Counter from "../components/counter/Counter";
-import MyButton from "../components/myButton/MyButton";
-import Feedback from "../components/feedback/Feedback";
+import MyInput from "../components/forms/myInput/MyInput";
+import Counter from "../components/counters/counter/Counter";
+import MyButton from "../components/forms/myButton/MyButton";
+import Feedback from "../components/forms/feedback/Feedback";
 import gif from "../components/gift/myGifts/glitter-ball-10892_128.gif";
 // import cn from "classnames";
 

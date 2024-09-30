@@ -1,14 +1,14 @@
-import React from 'react'
-import FetchCat from '../../components/fetchCat/FetchCat';
+import React from "react";
+import FetchCat from "../../components/aPI/fetchCat/FetchCat";
 
 const LessonCatAPI = () => {
-    return (
-      <div className='lesson-container'>
-        <h2>Lesson Cat API</h2>
-        {/* <GenderForm/> */}
-        <FetchCat />
-      </div>
-    );
-  };
-  
-  export default LessonCatAPI;
+  return (
+    <div className="lesson-container">
+      <h2>Lesson Cat API</h2>
+      {/* <GenderForm/> */}
+      <FetchCat />
+    </div>
+  );
+};
+
+export default LessonCatAPI;

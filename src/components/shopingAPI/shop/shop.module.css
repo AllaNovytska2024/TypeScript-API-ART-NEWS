@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  header {
+    position: sticky;
+    top: 0px;
+  
+    display: flex;
+    padding: 15px 20px;
+    width: 100%;
+    height: 95px;
+    background-color: goldenrod;
+    justify-content: space-between;
+    font-size: 80%;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+  }
+  
+  .burger-menu {
+    /* это свойство прячет элемент но оставляет его в потоке */
+    /* visibility: hidden; */
+    /* этим свойство мы прячем элемент и он исчезает из верстки */
+    display: none;
+  }
+  
+  nav > a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav > span {
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  
+  nav > a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 740px) {
+    /* header {
+        background-color: rgb(189, 68, 68);
+      } */
+  
+    nav > a {
+      /* прячем все ссылки из меню */
+      display: none;
+    }
+  
+    .burger-menu {
+      /* показываем иконку складного меню */
+      display: block;
+    }
+  }
+  
+  @media (max-width: 634px) {
+    .grid-gallery {
+      grid-auto-rows: 500px;
+    }
+  
+    .img-wrapper {
+      width: 100%;
+      height: 300px;
+    }
+  }
+  
+  .loader {
+    width: 59px;
+    height: 30px;
+    border: 9px solid goldenrod;
+    border-bottom-color: greenyellow;
+    border-radius: 15px;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 0,7s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .loader-hide {
+    display: none;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .welcome {
+    width: 100%;
+    background-color: rgb(195, 245, 245);
+  
+    position: fixed;
+    padding: 15px 15px 0px 15px;
+    font-size: larger;
+  
+    gap: 15px;
+    justify-content: space-between;
+    font-style: italic;
+  }
+  
+  
+  
+  main {
+    padding: 0px;
+    flex: 1;
+  }
+  
+  footer {
+    width: 100%;
+    height: 50px;
+    background-color: gold;
+  }
+  
+  .span {
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 10px;
+    margin: 3px 9px 48px 9px;
+    color: goldenrod;
+  }
+  .span:hover {
+    color: rgba(53, 25, 25, 0.542);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .gold-hover{
+    background-color: goldenrod;
+  }
+  .gold-hover:hover{
+    color: gold;
+  }
+  
+  #cartContainer {
+    color: rgb(254, 5, 5);
+    font: solid;
+    font-size: large;
+  }
+  
+  .container-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding-top: 285px;
+  }
+  #productContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    
+  }
+  
+  .product-card {
+    border: 5px double gold;
+    border-radius: 35px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  #productForm {
+    background-color: #ecd23c;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
+  .card-img {
+    width: 80%;
+    height: auto;
+  }
+  
+  .span {
+    justify-content: space-between;
+    text-align: left;
+    margin: 3px 9px 48px 9px;
+    color: #fcf014;
+  }
+  
+  .side-menu-hide {
+    display: none;
+  }
+  
+  .side-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: gold;
+    top: 80px;
+    right: 0px;
+    width: 100%;
+  }
+  
+  

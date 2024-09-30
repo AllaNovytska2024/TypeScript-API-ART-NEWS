@@ -1,7 +1,7 @@
 // import styles from './Lesson13.module.css'
 // import GenderForm from '../../components/genderForm/GenderForm';
 
-import RobotForm from '../../components/robotForm/RobotForm';
+import RobotForm from '../../components/forms/robotForm/RobotForm';
 
 const Lesson13 = () => {
   return (

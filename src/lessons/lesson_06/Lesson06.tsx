@@ -140,8 +140,12 @@ export default function Lesson06() {
   dog.sound();
 
   return (
-    <div>
-      <h2>Lesson 06</h2>
+    <div className="lesson-container">
+      <h2>Lesson 6. TypeScript part 1</h2>
+      <p>
+        Все самое интересное в этом уроке происходит в теле компонента Lesson06
+        и в комментариях к коду ⚡️
+      </p>
     </div>
   );
 }

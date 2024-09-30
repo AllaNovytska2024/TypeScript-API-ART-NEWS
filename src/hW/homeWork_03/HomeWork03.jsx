@@ -12,7 +12,7 @@
 // };
 
 // export default HomeWork03;
-import MyForm from "../../components/myForm/MyForm";
+import MyForm from "../../components/forms/myForm/MyForm";
 
 function Homework03() {
   return (

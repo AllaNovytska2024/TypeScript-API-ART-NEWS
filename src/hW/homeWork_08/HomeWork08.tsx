@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Loader from '../../components/loaderDm/LoaderDm';
+import Loader from '../../components/forms/loaders/loaderDm/LoaderDm';
 // импорт css модулей происходит в переменной
 import styles from "./homeWork08.module.css";
 

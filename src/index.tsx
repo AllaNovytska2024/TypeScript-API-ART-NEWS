@@ -1,14 +1,14 @@
 import ReactDOM from "react-dom/client";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Counter from "./components/counter/Counter";
-import Feedback from "./components/feedback/Feedback";
-import FetchDog from "./components/fetchDog/FetchDog";
-import FetchCat from "./components/fetchCat/FetchCat";
-import HomePage from "./components/homepage/HomePage";
-import MyForm from "./components/myForm/MyForm";
+import Counter from "./components/counters/counter/Counter";
+import Feedback from "./components/forms/feedback/Feedback";
+import FetchDog from "./components/aPI/fetchDog/FetchDog";
+import FetchCat from "./components/aPI/fetchCat/FetchCat";
+import HomePage from "./components/dom/homepage/HomePage";
+import MyForm from "./components/forms/myForm/MyForm";
 import "./index.css";
-import Layout from "./layout/Layout";
-import NoPage from "./components/noPage/NoPage";
+import Layout from "./components/dom/layout/Layout";
+import NoPage from "./components/dom/noPage/NoPage";
 import Lesson01 from "./lessons/lesson_01/Lesson01";
 import Lesson02 from "./lessons/lesson_02/Lesson02";
 import Lesson03 from "./lessons/lesson_03/Lesson03";
@@ -24,10 +24,10 @@ import Lesson12 from "./lessons/lesson_12/Lesson12";
 import Lesson13 from "./lessons/lesson_13/Lesson13";
 import Lesson14 from "./lessons/lesson_14/Lesson14";
 import LedyArt from "./ledyArt/LadyArt";
-import FetchArtNews from "./artApiNews/ArtApiNews";
+import FetchArtNews from "./components/aPI/artApiNews/ArtApiNews";
 import LessonCatAPI from "./lessons/lesson_catAPI/LessonCatAPI";
 import LessonGenderForm from "./lessons/lesson_GenderForm/LessonGenderForm";
-import GenderForm from "./components/genderForm/GenderForm";
+import GenderForm from "./components/forms/genderForm/GenderForm";
 import LessonNoPage from "./lessons/lesson_noPage/LessonNoPage";
 
 const root = ReactDOM.createRoot(
