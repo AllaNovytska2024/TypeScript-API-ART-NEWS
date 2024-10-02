@@ -1,0 +1,34 @@
+.cartContainer {
+    text-align: center;
+  }
+  .cartList {
+    list-style: none;
+    padding: 0;
+  }
+  .cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid grey;
+  }
+  
+  .cartItem:last-child {
+    border-bottom: none;
+  }
+  
+  .cartItemTitle {
+    color: rgb(64, 64, 64);
+    text-align: left;
+    flex: 1;
+    font-weight: bold;
+  }
+  
+  .cartItemQuantity {
+    margin-right: 15px;
+  }
+  
+  .cartItemPrice {
+    font-weight: bold;
+    color: rgb(64, 64, 64);
+  }

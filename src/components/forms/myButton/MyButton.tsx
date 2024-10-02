@@ -5,7 +5,7 @@ import styles from "./myButton.module.css";
 interface IMyButtonProps {
   text: string;
   isPrimary?: boolean;
-  type?: "button" | "submit" | "reset";
+  type?: "button" | "submit" | "reset" ;
   onClick?: () => void;
   // price ?:number;
 }

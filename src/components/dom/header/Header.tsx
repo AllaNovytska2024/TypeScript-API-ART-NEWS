@@ -1,10 +1,21 @@
-import { NavLink } from 'react-router-dom';
-import styles from './header.module.css'
-import gif from "../../../assets/gift/myGifts/glitter-ball-10892_128.gif"
+import { NavLink } from "react-router-dom";
+import styles from "./header.module.css";
+import gif from "../../../assets/gift/myGifts/glitter-ball-10892_128.gif";
+import { useCart } from "../../aPI/shopingAPI/context/CartContext";
+
 const Header = () => {
+  // ! данные из контекста доступны из любого компонента
+  const { cart } = useCart();
+
+  const calculateTotalPrice = () => {
+    return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+  };
+
   return (
     <header className={styles.header}>
-        <img className="imgSize" src={gif} alt="" />
+      <img className="imgSize" src={gif} alt="" />
+
+      <nav className={styles.nav}>
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"/"}
@@ -16,7 +27,7 @@ const Header = () => {
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"lesson-ShoopingAPI"}
         >
-          shopingAPI
+          Shoping API
         </NavLink>
 
         <NavLink
@@ -49,7 +60,9 @@ const Header = () => {
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"lesson-noPage"}
-        >Lesson NoPage</NavLink>
+        >
+          Lesson NoPage
+        </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"art-API-News"}
@@ -82,7 +95,22 @@ const Header = () => {
         >
           MyForm
         </NavLink>
-      </header>
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.linkActive : "")}
+          to={"shop"}
+        >
+          Shop
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.linkActive : "")}
+          to={"cart"}
+        >
+          Cart
+        </NavLink>
+      </nav>
+      {/* отображаем данные из корзины в header */}
+      <span>Cart: €{calculateTotalPrice().toFixed(2)}</span>
+    </header>
   );
 };
 

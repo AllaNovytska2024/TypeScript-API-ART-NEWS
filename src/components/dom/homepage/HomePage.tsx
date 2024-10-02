@@ -63,9 +63,9 @@ const HomePage = () => {
         </Link>
         
         <Link to="consultation-EmployeeForm">
-          <div>consultation-6.EmployeeForm</div>
+          <div>Consultation-6.EmployeeForm</div>
         </Link>
-
+        {/* <Link to='shop'><div>Lesson 15</div></Link> */}
         
         {/* <div>Lesson 4</div>
         <div>Lesson 5</div>

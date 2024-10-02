@@ -1,6 +1,6 @@
-import { NavLink, Outlet } from "react-router-dom";
+import {  Outlet } from "react-router-dom";
 import styles from "./layout.module.css";
-import gif from "../../../assets/gift/myGifts/glitter-ball-10892_128.gif";
+// import gif from "../../../assets/gift/myGifts/glitter-ball-10892_128.gif";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 
