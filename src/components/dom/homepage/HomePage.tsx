@@ -52,13 +52,21 @@ const HomePage = () => {
           <div>Lesson no Page</div>
         </Link>
 
+        <Link to="lesson-FoxAPI">
+          <div>Lesson Fox API</div>
+        </Link>
         <Link to="lesson-GenderForm">
           <div>Lesson GenderForm</div>
         </Link>
-        <Link to="lesson-14">
-          <div>Lesson 14</div>
+        <Link to="lesson-ShoopingAPI">
+          <div>Lesson 14. Shooping API</div>
+        </Link>
+        
+        <Link to="consultation-EmployeeForm">
+          <div>consultation-6.EmployeeForm</div>
         </Link>
 
+        
         {/* <div>Lesson 4</div>
         <div>Lesson 5</div>
         <div>Lesson 6</div>

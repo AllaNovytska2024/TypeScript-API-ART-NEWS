@@ -1,111 +1,97 @@
-import style from "./shop.module.css"
-import cn from 'classnames';
-// import { v4 } from "uuid";
+import styles from './shop.module.css'
+import { useFormik } from 'formik';
+import { useEffect, useState } from 'react';
+import * as Yup from 'yup';
+import ShopProduct from '../shopProduct/ShopProduct';
 
-// const containerProducts = document.querySelector("#container-products");
-// const loader = document.querySelector("#loader");
-// const productSelect = document.querySelector("#productSelect");
-// const cartList = document.querySelector("#cartList");
-// const totalPriceElement = document.querySelector("#totalPrice");
 
-// let cart = [];
+interface IFormValue {
+  amount: string;
+}
 
-// const Shop = async () => {
-//   loader.classList.toggle("loader-hide");
-//   setTimeout(async () => {
-//     const res = await fetch("https://fakestoreapi.com/products?limit=20");
-//     const data = await res.json();
-//     data.forEach((product) => {
-//       const card = document.createElement("div");
-//       card.classList.add("product-card");
-//       const heading = document.createElement("h4");
-//       heading.textContent = product.title;
-//       const price = document.createElement("p");
-//       price.textContent = `Price: ${Math.floor(product.price)} €`;
-//       const img = document.createElement("img");
-//       img.src = product.image;
-//       img.classList.add("card-img");
-//       card.append(heading, price, img);
-//       containerProducts.append(card);
+export interface IProduct {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  rating: {
+    rate: number;
+    count: number;
+  };
+}
 
-//       const option = document.createElement("option");
-//       option.value = product.id;
-//       option.textContent = `${product.title} - $${product.price}`;
-//       productSelect.appendChild(option);
-//     });
-//     loader.classList.toggle("loader-hide");
-//   }, 1000);
-// };
+const schema = Yup.object().shape({
+  amount: Yup
+    .number()
+    .typeError('кол-во продуктов - это число 🥲')
+    .required('ввод данных обязателен!')
+    .integer('введите целое число')
+    .min(1, 'кол-во должно быть больше 1!')
+    .max(20, 'кол-во не больше 20!')
+});
 
-// getProducts();
 
-// function addToCart(productId, quantity) {
-//   const selectedOption = productSelect.options[productSelect.selectedIndex];
-//   const productName = selectedOption.textContent.split(" - ")[0];
-//   const productPrice = parseFloat(selectedOption.textContent.split(" - $")[1]);
+const Shop = () => {
 
-//   const existingProduct = cart.find((item) => item.id === productId);
-//   if (existingProduct) {
-//     if (
-//       confirm(
-//         "Такой товар уже лежит в корзине. Вы действительно хотите добавить товар еще раз?"
-//       )
-//     ) {
-//       existingProduct.quantity += quantity;
-//     }
-//   } else {
-//     cart.push({
-//       id: productId,
-//       name: productName,
-//       price: productPrice,
-//       quantity: quantity,
-//     });
-//   }
-//   updateCartDisplay();
-// }
+  const [products, setProducts] = useState<IProduct[]>([]);
+  const [finalPrice, setFinalPrice] = useState<number>(0)
 
-// function updateCartDisplay() {
-//   cartList.innerHTML = ""; // Очистка текущего содержимого
+  const getProducts = async (amount: string) => {
+    const res = await fetch(`https://fakestoreapi.com/products?limit=${amount}`);
+    const data = await res.json();
+    setProducts(data);
+  };
 
-//   cart.forEach((item) => {
-//     const totalItemPrice = (item.price * item.quantity).toFixed(2);
-//     const listItem = document.createElement("li");
-//     listItem.innerHTML = `${item.name} - $${item.price} x ${item.quantity} = $${totalItemPrice}
-//       <button class="decrease" data-id="${item.id}">-</button>
-//       <button class="increase" data-id="${item.id}">+</button>`;
-//     cartList.appendChild(listItem);
-//   });
 
-//   const totalPrice = cart.reduce(
-//     (total, item) => total + item.quantity * item.price,
-//     0
-//   );
-//   totalPriceElement.textContent = `Total Price:   $${totalPrice.toFixed(2)}`;
-// }
+  const formik = useFormik({
+    initialValues: {
+      amount: ''
+    } as IFormValue,
+    validationSchema: schema,
+    validateOnChange: false,
+    onSubmit: (value: IFormValue, { resetForm }) => {
+      getProducts(value.amount);
+      resetForm();
+    }
+  });
 
-// document.querySelector("#priceForm").addEventListener("submit", (event) => {
-//   event.preventDefault();
-//   const productId = parseInt(productSelect.value);
-//   const quantity = parseInt(document.querySelector("#quantity").value);
-//   addToCart(productId, quantity);
-// });
+  // это событие произойдет по нажатию на кнопку и почистит
+  // предыдущий вывод данных
+  const handleClean = () => {
+    setProducts([]);
+  };
 
-// cartList.addEventListener("click", (event) => {
-//   if (event.target.classList.contains("decrease")) {
-//     const productId = parseInt(event.target.dataset.id);
-//     const product = cart.find((item) => item.id === productId);
-//     if (product.quantity > 1) {
-//       product.quantity -= 1;
-//     } else {
-//       cart = cart.filter((item) => item.id !== productId);
-//     }
-//     updateCartDisplay();
-//   }
+  const addProduct = (price: number) => {
+    setFinalPrice(prev => prev + price)
+  }
 
-//   if (event.target.classList.contains("increase")) {
-//     const productId = parseInt(event.target.dataset.id);
-//     const product = cart.find((item) => item.id === productId);
-//     product.quantity += 1;
-//     updateCartDisplay();
-//   }
-// });
+  useEffect(()=> {
+    getProducts('20')
+  }, [])
+
+
+
+  return (
+    <div className={styles.shopContainer}>
+      {formik.errors.amount &&
+
+      <p className={styles.error}>{formik.errors.amount}</p>
+      }
+      <h2>Shop 🛒</h2>
+      <form onSubmit={formik.handleSubmit}>
+        <input onChange={formik.handleChange} value={formik.values.amount} name='amount' placeholder='amount of products' type="text" />
+        <button onClick={handleClean} type="submit">show products</button>
+      </form>
+      <h4>FInal price: {Math.floor(finalPrice)}€</h4>
+      <div className={styles.gridContainerProducts}>
+        {products.map(product => (
+            <ShopProduct addProduct={addProduct} key={product.id} id={product.id} description={product.description} image={product.image} title={product.title} price={product.price}/>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Shop;

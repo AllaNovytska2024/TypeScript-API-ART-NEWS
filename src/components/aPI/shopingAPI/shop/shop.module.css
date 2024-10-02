@@ -1,4 +1,30 @@
-* {
+.gridContainerProducts {
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 480px;
+  gap: 10px;
+}
+
+.shopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.shopContainer form {
+  margin-bottom: 30px;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  top: 90px;
+}
+
+
+/* * {
     box-sizing: border-box;
   }
   
@@ -8,26 +34,12 @@
     min-height: 100vh;
     margin: 0;
   }
-  
-  header {
-    position: sticky;
-    top: 0px;
-  
-    display: flex;
-    padding: 15px 20px;
-    width: 100%;
-    height: 95px;
-    background-color: goldenrod;
-    justify-content: space-between;
-    font-size: 80%;
-    font-family: "Times New Roman", Times, serif;
-    font-style: italic;
-  }
-  
+   */
+/* 
   .burger-menu {
-    /* это свойство прячет элемент но оставляет его в потоке */
+    это свойство прячет элемент но оставляет его в потоке */
     /* visibility: hidden; */
-    /* этим свойство мы прячем элемент и он исчезает из верстки */
+    /* этим свойство мы прячем элемент и он исчезает из верстки
     display: none;
   }
   
@@ -47,17 +59,17 @@
   }
   
   @media (max-width: 740px) {
-    /* header {
+    header {
         background-color: rgb(189, 68, 68);
-      } */
+      }
   
     nav > a {
-      /* прячем все ссылки из меню */
+      прячем все ссылки из меню
       display: none;
     }
   
     .burger-menu {
-      /* показываем иконку складного меню */
+      показываем иконку складного меню
       display: block;
     }
   }
@@ -66,14 +78,14 @@
     .grid-gallery {
       grid-auto-rows: 500px;
     }
-  
-    .img-wrapper {
+   */
+    /* .img-wrapper {
       width: 100%;
       height: 300px;
     }
-  }
+  } */
   
-  .loader {
+  /* .loader {
     width: 59px;
     height: 30px;
     border: 9px solid goldenrod;
@@ -100,8 +112,8 @@
       transform: rotate(360deg);
     }
   }
-  
-  .welcome {
+   */
+  /* .welcome {
     width: 100%;
     background-color: rgb(195, 245, 245);
   
@@ -112,21 +124,16 @@
     gap: 15px;
     justify-content: space-between;
     font-style: italic;
-  }
+  } */
   
   
   
-  main {
+  /* main {
     padding: 0px;
     flex: 1;
   }
   
-  footer {
-    width: 100%;
-    height: 50px;
-    background-color: gold;
-  }
-  
+
   .span {
     justify-content: space-between;
     text-align: center;
@@ -148,8 +155,10 @@
   .gold-hover:hover{
     color: gold;
   }
-  
-  #cartContainer {
+   */
+
+/*  My css======*/
+  /* #cartContainer {
     color: rgb(254, 5, 5);
     font: solid;
     font-size: large;
@@ -195,8 +204,8 @@
     margin: 3px 9px 48px 9px;
     color: #fcf014;
   }
-  
-  .side-menu-hide {
+   */
+  /* .side-menu-hide {
     display: none;
   }
   
@@ -208,6 +217,6 @@
     top: 80px;
     right: 0px;
     width: 100%;
-  }
+  } */
   
   

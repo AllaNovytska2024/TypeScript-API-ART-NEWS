@@ -1,7 +1,7 @@
 interface IInputProps {
   label: string;
   placeholder: string;
-  type: "email" | "password" | "text";
+  type: "email" | "password" | "text" | "number";
   name: string;
 }
 

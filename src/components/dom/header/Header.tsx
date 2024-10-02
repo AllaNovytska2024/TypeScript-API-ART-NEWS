@@ -14,6 +14,13 @@ const Header = () => {
 
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
+          to={"lesson-ShoopingAPI"}
+        >
+          shopingAPI
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"fetch-dog"}
         >
           Dog API
@@ -24,6 +31,13 @@ const Header = () => {
           to={"fetch-cat"}
         >
           Cat API
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.linkActive : "")}
+          to={"fetch-fox"}
+        >
+          Fox API
         </NavLink>
 
         <NavLink

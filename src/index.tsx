@@ -4,6 +4,7 @@ import Counter from "./components/forms/counters/counter/Counter";
 import Feedback from "./components/forms/feedback/Feedback";
 import FetchDog from "./components/aPI/fetchDog/FetchDog";
 import FetchCat from "./components/aPI/fetchCat/FetchCat";
+import FetchFox from "./components/aPI/fetchFox/FetchFox";
 import HomePage from "./components/dom/homepage/HomePage";
 import MyForm from "./components/forms/myForm/MyForm";
 import "./index.css";
@@ -29,6 +30,8 @@ import LessonCatAPI from "./lessons/lesson_catAPI/LessonCatAPI";
 import LessonGenderForm from "./lessons/lesson_GenderForm/LessonGenderForm";
 import GenderForm from "./components/forms/genderForm/GenderForm";
 import LessonNoPage from "./lessons/lesson_noPage/LessonNoPage";
+import Shop from "./components/aPI/shopingAPI/shop/Shop";
+import EmployeeForm from "./components/forms/employeeForm/EmployeeForm";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -45,6 +48,7 @@ root.render(
         <Route element={<HomePage />} path="/" />
         <Route element={<FetchDog />} path="fetch-dog" />
         <Route element={<FetchCat />} path="fetch-cat" />
+        <Route element={<FetchFox />} path="fetch-fox" />
         <Route element={<LedyArt />} path="ledy-art" />
         <Route element={<FetchArtNews />} path="art-API-News" />
         <Route element={<GenderForm />} path="gender-Form" />
@@ -67,7 +71,10 @@ root.render(
         <Route element={<LessonCatAPI />} path="lesson-CatAPI" />
         <Route element={<LessonNoPage />} path="lesson-noPage" />
         <Route element={<LessonGenderForm />} path="lesson-GenderForm" />
-        <Route element={<Lesson14 />} path="lesson-14" />
+        <Route element={<Shop />} path="lesson-ShoopingAPI" />
+        <Route element={< EmployeeForm />} path="consultation-EmployeeForm" />
+
+        
 
         <Route element={<NoPage />} path="*" />
       </Route>
