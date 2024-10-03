@@ -89,7 +89,7 @@ const Shop = () => {
                 type="text"
               />
               <button onClick={handleClean} type="submit">
-                show products
+                show products🛒
               </button>
             </form>
             <div className={styles.gridContainerProducts}>

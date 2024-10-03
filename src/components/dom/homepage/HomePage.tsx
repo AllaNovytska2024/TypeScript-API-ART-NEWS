@@ -59,7 +59,7 @@ const HomePage = () => {
           <div>Lesson GenderForm</div>
         </Link>
         <Link to="lesson-ShoopingAPI">
-          <div>Lesson 14. Shooping API</div>
+          <div>Lesson 14. Shooping API 🛒</div>
         </Link>
         
         <Link to="consultation-EmployeeForm">

@@ -64,7 +64,7 @@ const ShopProductInfo = () => {
           <div>
 
             <Link to='/shop'><MyButton text='back to products' /></Link>
-            <MyButton isPrimary={true} text='add product' onClick={addToCartFromProduct}/>
+            <MyButton isPrimary={true} text='add product🛒' onClick={addToCartFromProduct}/>
           </div>
         </div>
       )}

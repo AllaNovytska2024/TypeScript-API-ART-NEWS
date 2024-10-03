@@ -15,10 +15,10 @@ const Cart = () => {
 
   return (
     <div className={styles.cartContainer}>
-      <h2>Shopping cart</h2>
+      <h2>Shopping cart 🛒</h2>
       {/* через тернарный оператор или отображаем сообщение о пустой корзине или выводим данные по продуктам */}
       {cart.length === 0 ? (
-        <p>Your cart is empty...</p>
+        <p>Your cart is empty 🛒...</p>
       ) : (
         <ul className={styles.cartList}>
           {cart.map((item) => (
@@ -31,18 +31,18 @@ const Cart = () => {
                 €{(item.quantity * item.price).toFixed(2)}
               </span>
               {/* передаем id в функцию удаления товара из контекста */}
-              <MyButton text="remove" onClick={() => removeFromCart(item.id)} />
+              <MyButton text="remove item" onClick={() => removeFromCart (item.id)} />
+              <MyButton text="Clear cart🛒" onClick={clearCart} isPrimary />
             </li>
           ))}
         </ul>
       )}
       <div>
         {/* в стандартный метод toFixed() передаем кол-во знаков после запятой */}
-        <h3>Total price: €{calculateTotalPrice().toFixed(2)}</h3>
+        <h3>🛒 Total price: €{calculateTotalPrice().toFixed(2)}</h3>
+        
       </div>
-      <div>
-        <MyButton text="Clear cart" onClick={clearCart} />
-      </div>
+      
     </div>
   );
 };

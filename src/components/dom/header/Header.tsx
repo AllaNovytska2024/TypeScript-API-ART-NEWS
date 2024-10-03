@@ -27,7 +27,7 @@ const Header = () => {
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"lesson-ShoopingAPI"}
         >
-          Shoping API
+          Shoping API 🛒
         </NavLink>
 
         <NavLink
@@ -99,17 +99,17 @@ const Header = () => {
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"shop"}
         >
-          Shop
+          Shop🛒
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? styles.linkActive : "")}
           to={"cart"}
         >
-          Cart
+          Cart🛒
         </NavLink>
       </nav>
       {/* отображаем данные из корзины в header */}
-      <span>Cart: €{calculateTotalPrice().toFixed(2)}</span>
+      <span>🛒Cart: €{calculateTotalPrice().toFixed(2)}</span>
     </header>
   );
 };

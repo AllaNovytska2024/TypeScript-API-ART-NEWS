@@ -53,8 +53,8 @@ const ShopProduct = ({
         {/* <button onClick={}>add product</button> */}
         <MyButton
           onClick={addToCartFromProduct}
-          text="add product"
-          // price={price}
+          text="add product 🛒"
+          price={price}
         />
       </div>
     </div>

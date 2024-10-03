@@ -18,8 +18,8 @@
   }
   
   .cartItemTitle {
-    color: rgb(64, 64, 64);
-    text-align: left;
+    color: rgb(42, 113, 131);
+    text-align: center;
     flex: 1;
     font-weight: bold;
   }
@@ -30,5 +30,5 @@
   
   .cartItemPrice {
     font-weight: bold;
-    color: rgb(64, 64, 64);
+    color: rgb(35, 119, 54);
   }

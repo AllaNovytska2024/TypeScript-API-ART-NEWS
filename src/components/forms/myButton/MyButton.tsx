@@ -7,7 +7,7 @@ interface IMyButtonProps {
   isPrimary?: boolean;
   type?: "button" | "submit" | "reset" ;
   onClick?: () => void;
-  // price ?:number;
+  price ?:number;
 }
 
 function MyButton({
@@ -15,7 +15,7 @@ function MyButton({
   onClick = () => console.log("click!"),
   type = "button",
   isPrimary = false,
-  // price = 0,
+  price = 0,
 }: IMyButtonProps) {
   return (
     <button
