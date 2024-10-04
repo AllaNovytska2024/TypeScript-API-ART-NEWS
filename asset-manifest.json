@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.9b8678c1.css",
-    "main.js": "./static/js/main.415189e9.js",
+    "main.css": "./static/css/main.d18e1f56.css",
+    "main.js": "./static/js/main.c41ed9a9.js",
     "static/media/cat-color.jpg": "./static/media/cat-color.7d5d9b856274ec5432b6.jpg",
     "static/media/cartoon-762_128.gif": "./static/media/cartoon-762_128.cd19cb81025f0b27d52d.gif",
     "static/media/monkeyDenken.jpg": "./static/media/monkeyDenken.fdf01c9dae2306e113c9.jpg",
     "static/media/glitter-ball-10892_128.gif": "./static/media/glitter-ball-10892_128.a71a0f39c4eb73c631ac.gif",
     "static/media/allaImg.jpg": "./static/media/allaImg.b001e92ebb6d52bb0327.jpg",
     "static/media/jsx.jpg": "./static/media/jsx.2b139d52d7e7b606eee6.jpg",
+    "static/media/colibry.jpg": "./static/media/colibry.06c3625de951be7a785a.jpg",
     "index.html": "./index.html",
-    "main.9b8678c1.css.map": "./static/css/main.9b8678c1.css.map",
-    "main.415189e9.js.map": "./static/js/main.415189e9.js.map"
+    "main.d18e1f56.css.map": "./static/css/main.d18e1f56.css.map",
+    "main.c41ed9a9.js.map": "./static/js/main.c41ed9a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b8678c1.css",
-    "static/js/main.415189e9.js"
+    "static/css/main.d18e1f56.css",
+    "static/js/main.c41ed9a9.js"
   ]
 }
