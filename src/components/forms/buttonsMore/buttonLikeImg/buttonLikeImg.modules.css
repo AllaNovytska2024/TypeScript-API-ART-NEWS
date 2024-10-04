@@ -1,0 +1,21 @@
+/* @font-face {
+    font-family: 'Montserrat';
+    src: url('../../../../assets/image/colibry.jpg');
+  }
+  .btn {
+    padding: 0.25em 0.75em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    color: #1c1c1c;
+  } */
+
+  .btn {
+    padding: 0.25em 0.75em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    color: #1c1c1c;
+  }
+  
+  .btn_like {
+    /* ваши стили для изображения */
+  }

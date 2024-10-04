@@ -28,7 +28,7 @@ export default function FetchArtNews() {
   const fetchArtNews = async () => {
     try {
       const response = await fetch(
-        "https://newsapi.org/v2/everything?q=art&from=2024-08-28&sortBy=publishedAt&apiKey=a0713f75db1548e9bc1f7510938d863b"
+        "https://newsapi.org/v2/everything?q=art&from=2024-09-28&sortBy=publishedAt&apiKey=a0713f75db1548e9bc1f7510938d863b"
       );
       if (!response.ok) {
         throw new Error("Ошибка сети");

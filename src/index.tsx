@@ -36,6 +36,7 @@ import Shop from "./components/aPI/shopingAPI/shop/Shop";
 import ShopProductInfo from "./components/aPI/shopingAPI/shopProductInfo/ShopProductInfo";
 import { CartProvider } from "./components/aPI/shopingAPI/context/CartContext";
 import Cart from "./components/aPI/shopingAPI/cart/Cart";
+import ButtonLikeImg from "./components/forms/buttonsMore/buttonLikeImg/ButtonLikeImg";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -53,10 +54,12 @@ root.render(
           {/* значение path - это путь до компонента, это значение мы пропишем в элементе Link, который должен привести нас к этому компоненту */}
           {/* то есть в path могут прописаны любые значения одной строкой без пропуска - важно сопоставлять их со значениями в ссылке */}
           <Route element={<HomePage />} path="/" />
+
+
           <Route element={<FetchDog />} path="fetch-dog" />
           <Route element={<FetchCat />} path="fetch-cat" />
           <Route element={<FetchFox />} path="fetch-fox" />
-          <Route element={<LedyArt />} path="ledy-art" />
+          
           <Route element={<FetchArtNews />} path="art-API-News" />
           <Route element={<GenderForm />} path="gender-Form" />
           <Route element={<EmployeeForm />} path="consultation-EmployeeForm" />
@@ -64,6 +67,17 @@ root.render(
           <Route element={<MyForm />} path="my-form" />
           <Route element={<Feedback />} path="feedback" />
           <Route element={<Lesson01 />} path="lesson-1" />
+
+<Route element={<ButtonLikeImg /> }path="btn-LikeImg" />
+    
+    <Route element={<LedyArt />} path="ledy-art" />
+
+          {/* <Route element={<ButtonLikeImg />} path="/" />
+    
+        <Route  element={<LedyArt />} path="/ledy-art"/>
+         */}
+    
+
           <Route element={<Lesson02 />} path="lesson-2" />
           <Route element={<Lesson03 />} path="lesson-3" />
           <Route element={<Lesson04 />} path="lesson-4" />

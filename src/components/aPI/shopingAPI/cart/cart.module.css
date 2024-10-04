@@ -1,9 +1,11 @@
 .cartContainer {
     text-align: center;
+    
   }
   .cartList {
     list-style: none;
     padding: 0;
+    box-shadow: 18px 18px 18px rgba(74, 183, 7, 0.1);
   }
   .cartItem {
     display: flex;
@@ -11,6 +13,7 @@
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid grey;
+    box-shadow: 18px 18px 18px rgba(74, 183, 7, 0.1);
   }
   
   .cartItem:last-child {
